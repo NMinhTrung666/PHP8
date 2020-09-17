@@ -14,7 +14,7 @@
     while($row_loaitin = mysqli_fetch_array($loaitin)){
         $idLT = $row_loaitin['idLT'];
 ?>        
-        	<a href="index.php?p=tintrongloai&idLT=<?php echo $idLT;?>"><?php echo $row_loaitin['Ten'];?></a>
+        	<a href="index1.php?p=tintrongloai&idLT=<?php echo $idLT;?>"><?php echo $row_loaitin['Ten'];?></a>
 <?php } ?>            
         </div>
         <div class="clear"></div>
@@ -25,7 +25,7 @@
                     $tinmoinhat = TinMoiNhat_TheLoai($conn,$idTL);
                     $row_tinmoinhat = mysqli_fetch_array($tinmoinhat);
                 ?>
-                    <h3 class="title" ><a href="index.php?p=chitiettin&idTin=<?php echo $row_tinmoinhat['idTin'];?>"><?php echo $row_tinmoinhat['TieuDe'];?></a></h3>
+                    <h3 class="title" ><a href="index1.php?p=chitiettin&idTin=<?php echo $row_tinmoinhat['idTin'];?>"><?php echo $row_tinmoinhat['TieuDe'];?></a></h3>
                     <img class="images_news" src="upload/tintuc/<?php echo $row_tinmoinhat['urlHinh'];?>" align="left" />
                     <div class="des"><?php echo $row_tinmoinhat['TomTat'];?></div>
                     <div class="clear"></div>
@@ -37,7 +37,7 @@
     $tinmoinhat_haitin = TinMoiNhat_TheLoai_HaiTin($conn,$idTL);
     while($row = mysqli_fetch_array($tinmoinhat_haitin)){
 ?>
-             <p class="tlq"><a href="index.php?p=chitiettin&idTin=<?php echo $row['idTin'];?>"><?php echo $row['TieuDe'];?></a>
+             <p class="tlq"><a href="index1.php?p=chitiettin&idTin=<?php echo $row['idTin'];?>"><?php echo $row['TieuDe'];?></a>
                 </a></p> 
 <?php } ?>                
             </div>    

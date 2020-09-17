@@ -14,6 +14,7 @@
 <head>
 	<title>admin</title>
 	<link rel="stylesheet" type="text/css" href="layout.css">
+
 </head>
 <body>
 <table width="855px" border="0" cellspacing="0" cellpadding="0" align="center">
@@ -24,8 +25,7 @@
 		<td id="hang2"><?php require "menu.php"; ?></td>
 	</tr>
 </table>
-<form action="xlthemTheLoai.php" method="post" >
-
+<form action="xlthemTheLoai.php" method="post">
 <table width="500" border="0" align="center">
   <tr>
     <td colspan="2" align="center"><strong>Thêm Thể Loại</strong></td>
@@ -41,12 +41,9 @@
       <input type="text" name="ThuTu" id="textfield" /></td>
   </tr>
   <tr>
-    <td>Ân hiện</td>
-    <td><label for="textfield2"></label>
-      <input type="text" name="AnHien" id="textfield2" /></td>
+    <td><label class="form-check-label" for="exampleCheck1" id="fileField2" >Hiện</label></td>
+    <td><input type="checkbox" value="1" class="form-check-input" id="textfield2" name="AnHien"></td>
   </tr>
-  
-  
   <tr>
     <td colspan="2"><input type="submit" name="them" id="button" value="Thêm" /></td>
   </tr>

@@ -43,8 +43,8 @@ $row_chitiet = mysqli_fetch_array($chitiet);
           while($row_tincungloai = mysqli_fetch_array($tincungloai)){
       ?>
         <li>       
-             <a href="index.php?p=chitiettin&idTin=<?php echo $row_tincungloai['idTin'];?>"><img src="upload/tintuc/<?php echo $row_tincungloai['urlHinh'];?>" alt=""></a> <br />
- 			 <a class="title" href="index.php?p=chitiettin&idTin=<?php echo $row_tincungloai['idTin'];?>"><?php echo $row_tincungloai['TieuDe'];?></a>
+             <a href="index1.php?p=chitiettin&idTin=<?php echo $row_tincungloai['idTin'];?>"><img src="upload/tintuc/<?php echo $row_tincungloai['urlHinh'];?>" alt=""></a> <br />
+ 			 <a class="title" href="index1.php?p=chitiettin&idTin=<?php echo $row_tincungloai['idTin'];?>"><?php echo $row_tincungloai['TieuDe'];?></a>
              <span class="no_wrap">   
         </li>
         

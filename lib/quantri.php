@@ -4,6 +4,21 @@
 				ORDER BY idTL ASC";
 		return mysqli_query($conn,$sql);
 	}
+	function showLoaiTin($conn){
+		$sql = "SELECT * FROM loaitin
+				ORDER BY idTL ASC";
+		return mysqli_query($conn,$sql);
+	}
+	function showQuangCao($conn){
+		$sql = "SELECT * FROM quangcao
+				ORDER BY idQC ASC";
+		return mysqli_query($conn,$sql);
+	}
+	function showTin($conn){
+		$sql = "SELECT * FROM tin
+				ORDER BY idTin ASC";
+		return mysqli_query($conn,$sql);
+	}
 	function utf8convert($str) {
                 if(!$str) return false;
                 $utf8 = array(

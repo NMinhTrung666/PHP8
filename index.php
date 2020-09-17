@@ -26,7 +26,7 @@
             $_SESSION['idUser'] = $row['idUser'];
             $_SESSION['HoTen'] = $row['HoTen'];
             $_SESSION['idGroup'] = $row['idGroup'];
-            header("location:../admin");  
+            header("location:../tintuc/admin");  
         }else{
             echo "1";
          

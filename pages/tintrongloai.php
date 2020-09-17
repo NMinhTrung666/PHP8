@@ -26,7 +26,7 @@
         <div class="cat-content">
         	<div class="col0 col1">
             	<div class="news">
-                    <h3 class="title" ><a href="index.php?p=chitiettin&idTin=<?php echo $row_tintheoloai['idTin'];?>"><?php echo $row_tintheoloai['TieuDe'];?></a></h3>
+                    <h3 class="title" ><a href="index1.php?p=chitiettin&idTin=<?php echo $row_tintheoloai['idTin'];?>"><?php echo $row_tintheoloai['TieuDe'];?></a></h3>
                     <img class="images_news" src="upload/tintuc/<?php echo $row_tintheoloai['urlHinh'];?>" align="left" />
                     <div class="des"><?php echo $row_tintheoloai['TomTat'];?></div>
                     <div class="clear"></div>
@@ -49,7 +49,7 @@
     $sotrang = ceil($tongsotin/$sotin1trang);
     for($i=1;$i<=$sotrang;$i++){
 ?>
-    <a <?php if($trang==$i){echo "style='background-color:red'";}?> href="index.php?p=tintrongloai&idLT=<?php echo $idLT;?>&trang=<?php echo $i;?>"><?php echo $i; ?></a>
+    <a <?php if($trang==$i){echo "style='background-color:red'";}?> href="index1.php?p=tintrongloai&idLT=<?php echo $idLT;?>&trang=<?php echo $i;?>"><?php echo $i; ?></a>
 
 <?php } ?>
 </div>

@@ -8,6 +8,8 @@ require "../lib/quantri.php";
 		$ThuTu = $_POST['ThuTu'];
 		$AnHien = $_POST['AnHien'];
 	}
+	echo $idTL;
+	die;
 	$sql = "INSERT INTO theloai
 				VALUES(null,'$TenTL','$TenTL_KhongDau','$ThuTu','$AnHien')";
 
